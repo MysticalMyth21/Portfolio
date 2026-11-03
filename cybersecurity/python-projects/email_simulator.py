@@ -1,17 +1,3 @@
-"""
-Starting template for creating an email simulator program using
-classes, methods, and functions.
-
-This template provides a foundational structure to develop your own
-email simulator. It includes placeholder functions and conditional statements
-with 'pass' statements to prevent crashes due to missing logic.
-Replace these 'pass' statements with your implementation once you've added
-the required functionality to each conditional statement and function.
-
-Note: Throughout the code, update comments to reflect the changes and logic
-you implement for each function and method.
-"""
-
 # --- OOP Email Simulator --- #
 
 # --- Email Class --- #
