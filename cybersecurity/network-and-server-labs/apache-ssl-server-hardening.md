@@ -23,8 +23,8 @@ This report outlines the process of generating a self-signed RSA certificate, co
 
 ### 2. Apache Server Configuration (`httpd.conf`)
 * **Key Modules Enabled:** Loaded essential cryptographic and proxy modules including `mod_ssl.so`, `mod_socache_shmcb.so`, and proxy-related components.
-* **Privilege Management:** Configured dedicated user and group directives (`Group javas` / service users) following least-privilege administrative practices rather than running web services directly as root.
-* **Virtual Host Setup (`VirtualHost _default_:443`):**
+* **Privilege Management:** Configured dedicated user and group directives (`Group apache` / service users) following least-privilege administrative practices rather than running web services directly as root.
+* **Virtual Host Setup (`<VirtualHost _default_:443>`):**
   * Enabled the SSL engine (`SSLEngine on`).
   * Pointed directives to the server certificate file (`SSLCertificateFile`) and private key file (`SSLCertificateKeyFile`).
 * **Verification:** Syntax check passed and Apache service initialized successfully with SSL parameters loaded.
